@@ -42,7 +42,7 @@ func (bar *Bar) Play(cur int64) {
 	if bar.percent != last && bar.percent%2 == 0 {
 		bar.rate += bar.graph
 	}
-	fmt.Printf("\r[%-100s]%3d%%  %8d/%d", bar.rate, bar.percent, bar.cur, bar.total)
+	fmt.Printf("\r[%-50s]%3d%%  %8d/%d", bar.rate, bar.percent, bar.cur, bar.total)
 }
 
 // Finish 结束
